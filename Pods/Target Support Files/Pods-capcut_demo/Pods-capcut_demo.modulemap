@@ -1,0 +1,6 @@
+framework module Pods_capcut_demo {
+  umbrella header "Pods-capcut_demo-umbrella.h"
+
+  export *
+  module * { export * }
+}
