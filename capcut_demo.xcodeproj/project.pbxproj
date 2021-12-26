@@ -7,17 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4123D22527787E3B0074E8C5 /* thirdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4123D22427787E3B0074E8C5 /* thirdVC.swift */; };
+		4123D22727787F090074E8C5 /* forthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4123D22627787F090074E8C5 /* forthVC.swift */; };
 		41A14B57276DF8A70060E0AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A14B56276DF8A70060E0AF /* AppDelegate.swift */; };
 		41A14B5B276DF8A70060E0AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A14B5A276DF8A70060E0AF /* ViewController.swift */; };
 		41A14B5E276DF8A70060E0AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41A14B5C276DF8A70060E0AF /* Main.storyboard */; };
 		41A14B60276DF8A80060E0AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41A14B5F276DF8A80060E0AF /* Assets.xcassets */; };
 		41A14B63276DF8A80060E0AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41A14B61276DF8A80060E0AF /* LaunchScreen.storyboard */; };
-		41C5A0BD2778637A00720941 /* secondVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C5A0BC2778637900720941 /* secondVc.swift */; };
+		41C5A0BD2778637A00720941 /* secondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C5A0BC2778637900720941 /* secondVC.swift */; };
 		41F430FD276E00C4000BE591 /* cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F430FC276E00C4000BE591 /* cell.swift */; };
 		DD4CC93F719F7C0458EF190F /* Pods_capcut_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE0433B5E392A9C52C4FAEE2 /* Pods_capcut_demo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4123D22427787E3B0074E8C5 /* thirdVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thirdVC.swift; sourceTree = "<group>"; };
+		4123D22627787F090074E8C5 /* forthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = forthVC.swift; sourceTree = "<group>"; };
 		41A14B53276DF8A70060E0AF /* capcut_demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = capcut_demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41A14B56276DF8A70060E0AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41A14B5A276DF8A70060E0AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -25,7 +29,7 @@
 		41A14B5F276DF8A80060E0AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41A14B62276DF8A80060E0AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41A14B64276DF8A80060E0AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		41C5A0BC2778637900720941 /* secondVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondVc.swift; sourceTree = "<group>"; };
+		41C5A0BC2778637900720941 /* secondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondVC.swift; sourceTree = "<group>"; };
 		41F430FC276E00C4000BE591 /* cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cell.swift; sourceTree = "<group>"; };
 		99541E8C58DA5BB21F546517 /* Pods-capcut_demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-capcut_demo.release.xcconfig"; path = "Target Support Files/Pods-capcut_demo/Pods-capcut_demo.release.xcconfig"; sourceTree = "<group>"; };
 		B362EF5BD4F7A0C697AA6601 /* Pods-capcut_demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-capcut_demo.debug.xcconfig"; path = "Target Support Files/Pods-capcut_demo/Pods-capcut_demo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -67,7 +71,9 @@
 			children = (
 				41A14B56276DF8A70060E0AF /* AppDelegate.swift */,
 				41A14B5A276DF8A70060E0AF /* ViewController.swift */,
-				41C5A0BC2778637900720941 /* secondVc.swift */,
+				41C5A0BC2778637900720941 /* secondVC.swift */,
+				4123D22627787F090074E8C5 /* forthVC.swift */,
+				4123D22427787E3B0074E8C5 /* thirdVC.swift */,
 				41F430FC276E00C4000BE591 /* cell.swift */,
 				41A14B5C276DF8A70060E0AF /* Main.storyboard */,
 				41A14B5F276DF8A80060E0AF /* Assets.xcassets */,
@@ -210,9 +216,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				41A14B5B276DF8A70060E0AF /* ViewController.swift in Sources */,
-				41C5A0BD2778637A00720941 /* secondVc.swift in Sources */,
+				4123D22727787F090074E8C5 /* forthVC.swift in Sources */,
+				41C5A0BD2778637A00720941 /* secondVC.swift in Sources */,
 				41F430FD276E00C4000BE591 /* cell.swift in Sources */,
 				41A14B57276DF8A70060E0AF /* AppDelegate.swift in Sources */,
+				4123D22527787E3B0074E8C5 /* thirdVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

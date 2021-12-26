@@ -21,7 +21,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         window = UIWindow(frame: UIScreen.main.bounds)
         let nav = UINavigationController(rootViewController: ViewController())
-        window?.rootViewController = nav
+        let second = secondVC()
+        let third = thirdVC()
+        let forth = forthVC()
+        
+        nav.tabBarItem = UITabBarItem(title: "1", image: UIImage(named: "3"), selectedImage: UIImage(named: "3"))
+        second.tabBarItem = UITabBarItem(title: "1", image: UIImage(named: "4"), selectedImage: UIImage(named: "4"))
+        third.tabBarItem = UITabBarItem(title: "1", image: UIImage(named: "5"), selectedImage: UIImage(named: "5"))
+        forth.tabBarItem = UITabBarItem(title: "1", image: UIImage(named: "6"), selectedImage: UIImage(named: "6"))
+        
+        let bar = UITabBarController()
+        bar.viewControllers = [nav, second, third, forth]
+        bar.tabBar.isTranslucent = true
+        bar.tabBar.bounds = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 30)
+        window?.rootViewController = bar
         window?.backgroundColor = .purple
         window?.makeKeyAndVisible()
         return true
