@@ -33,7 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let bar = UITabBarController()
         bar.viewControllers = [nav, second, third, forth]
         bar.tabBar.isTranslucent = true
-        bar.tabBar.bounds = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 30)
+
         window?.rootViewController = bar
         window?.backgroundColor = .purple
         window?.makeKeyAndVisible()
