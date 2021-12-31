@@ -9,29 +9,62 @@ import UIKit
 import SnapKit
 
 class ViewController: UIViewController {
-    lazy var btn = makeUIButton()
+
+    var touchViews = [UITouch: TouchSpotView]() // 这是个字典!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupUI()
+        view.isMultipleTouchEnabled = true
     }
     
-    func setupUI() {
-        view.addSubview(btn)
-        btn.snp.makeConstraints { make in
-            make.center.width.equalToSuperview()
-            make.height.equalTo(40)
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        for touch in touches {
+            creatViewForTouch(touch: touch)
         }
     }
-    func makeUIButton() -> UIButton {
-        let btn = UIButton()
-        btn.backgroundColor = .blue
-        btn.setTitle("go", for: .normal)
-        btn.addTarget(self, action: #selector(go), for: .touchUpInside)
-        return btn
+    
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        for touch in touches {
+            let newView = viewForTouch(touch: touch)
+            newView?.center = touch.location(in: view)
+        }
     }
     
-    @objc func go() {
-        navigationController?.pushViewController(secondVC(), animated: true)
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        for touch in touches {
+            removeViewForTouch(touch: touch)
+        }
+    }
+    
+    override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
+        for touch in touches {
+            removeViewForTouch(touch: touch)
+        }
+    }
+    
+    func creatViewForTouch(touch: UITouch) {
+        let newView = TouchSpotView()
+        
+        newView.bounds = CGRect(x: 0, y: 0, width: 1, height: 1)
+        newView.center = touch.location(in: view)
+        
+        view.addSubview(newView)
+        UIView.animate(withDuration: 0.2) {
+            newView.bounds.size = CGSize(width: 100, height: 100)
+        }
+        
+        touchViews[touch] = newView
+    }
+    
+    func viewForTouch(touch: UITouch) -> TouchSpotView? {
+        return touchViews[touch]
+    }
+    
+    func removeViewForTouch(touch: UITouch) {
+        if let view = touchViews[touch] {
+            view.removeFromSuperview()
+            touchViews.removeValue(forKey: touch)
+        }
     }
 }
 

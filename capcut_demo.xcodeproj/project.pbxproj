@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4123D22527787E3B0074E8C5 /* thirdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4123D22427787E3B0074E8C5 /* thirdVC.swift */; };
 		4123D22727787F090074E8C5 /* forthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4123D22627787F090074E8C5 /* forthVC.swift */; };
+		412F101E277ED30B003957B1 /* TouchSpotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412F101D277ED30B003957B1 /* TouchSpotView.swift */; };
 		41A14B57276DF8A70060E0AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A14B56276DF8A70060E0AF /* AppDelegate.swift */; };
 		41A14B5B276DF8A70060E0AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A14B5A276DF8A70060E0AF /* ViewController.swift */; };
 		41A14B5E276DF8A70060E0AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41A14B5C276DF8A70060E0AF /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		4123D22427787E3B0074E8C5 /* thirdVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thirdVC.swift; sourceTree = "<group>"; };
 		4123D22627787F090074E8C5 /* forthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = forthVC.swift; sourceTree = "<group>"; };
+		412F101D277ED30B003957B1 /* TouchSpotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchSpotView.swift; sourceTree = "<group>"; };
 		41A14B53276DF8A70060E0AF /* capcut_demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = capcut_demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41A14B56276DF8A70060E0AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41A14B5A276DF8A70060E0AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 			children = (
 				41A14B56276DF8A70060E0AF /* AppDelegate.swift */,
 				41A14B5A276DF8A70060E0AF /* ViewController.swift */,
+				412F101D277ED30B003957B1 /* TouchSpotView.swift */,
 				41C5A0BC2778637900720941 /* secondVC.swift */,
 				4123D22627787F090074E8C5 /* forthVC.swift */,
 				4123D22427787E3B0074E8C5 /* thirdVC.swift */,
@@ -219,6 +222,7 @@
 				4123D22727787F090074E8C5 /* forthVC.swift in Sources */,
 				41C5A0BD2778637A00720941 /* secondVC.swift in Sources */,
 				41F430FD276E00C4000BE591 /* cell.swift in Sources */,
+				412F101E277ED30B003957B1 /* TouchSpotView.swift in Sources */,
 				41A14B57276DF8A70060E0AF /* AppDelegate.swift in Sources */,
 				4123D22527787E3B0074E8C5 /* thirdVC.swift in Sources */,
 			);
